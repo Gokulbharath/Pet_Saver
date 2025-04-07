@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    position: relative;
+    margin-bottom: 30px; /* Creates a gap between welcome section and the content below */
+}
+
+.landscape-image {
+    width: 100%;
+    height: 60vh;  /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+/* Content Section */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Left Content */
+.left-content {
+    flex: 1;
+    max-width: 45%;
+    padding-right: 50px;
+    background-color: #ffffff; /* White background for the left side */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centers the text horizontally */
+    padding: 20px;
+}
+
+/* Pet Image Section */
+.pet-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Adoption Process */
+.process-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.process-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.process-section li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.process-section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsibilities Section */
+.responsibilities-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.responsibilities-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.responsibilities-section li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.responsibilities-section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Right Form */
+.right-form {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.right-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    font-size: 1rem;
+    height: 100px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-group button:hover {
+    background-color: #e07b00;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-form {
+        max-width: 100%;
+        padding: 0;
+    }
+}

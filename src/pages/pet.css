@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Add margin-top to the container */
+.pet-container {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 1cm; /* 3 cm gap between header and pet box */
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Sidebar */
+.filter-box {
+    width: 25%;
+    background: #ff6f61;
+    padding: 25px;
+    margin-right: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-box h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+}
+
+/* Form Group Styling */
+.filter-box .form-group {
+    margin-bottom: 20px;
+}
+
+.filter-box .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+/* Inputs and Selects */
+.filter-box .form-group input,
+.filter-box .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #f7fafc;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Focus State */
+.filter-box .form-group input:focus,
+.filter-box .form-group select:focus {
+    border-color: #ff6f61; /* Focus color */
+    outline: none;
+}
+
+/* Button Styling */
+.filter-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f61; /* Coral color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.filter-box button:hover {
+    background-color: #f56f5a; /* Slightly darker shade */
+}
+
+/* Pets Listing Section */
+.pets-list {
+    width: 75%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.pets-list h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff6f61;
+    text-align: center;
+}
+
+/* Pet Cards */
+.pet-card {
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    margin: 15px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pet-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.pet-card img:hover {
+    transform: scale(1.05);
+}
+
+.pet-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.pet-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.pet-card p b {
+    font-weight: 700;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .pet-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .filter-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pets-list {
+        width: 100%;
+    }
+
+    .pet-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .pet-card {
+        width: 100%;
+    }
+}
